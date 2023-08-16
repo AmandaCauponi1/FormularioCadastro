@@ -10,7 +10,7 @@
         body {
             display: flex;
             height: 100vh;
-            justify-content: center;
+           justify-content: center;
             align-items: center;
             flex-direction: column;
             gap: 2rem;
@@ -22,7 +22,7 @@
         }
 
         h1:hover {
-            color: #6495ed;
+            color: #0000CD;
             cursor: pointer;
         }
 
@@ -34,15 +34,31 @@
         img {
             height: 100px;
             width: 100px;
-           
         }
         a{
             text-decoration: none;
             text-align: center;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
         }
-        a:hover{
-           color: #6495ed;
+        p:hover{
+           color: white;
+           height: 1.1rem;
+        }
+        .box{
+            background-color: #1E90FF;
+            height: 13rem;
+            width: 10rem;
+            display: flex;
+           justify-content: center;
+           border-radius: 1rem;
+        }
+        .box:hover{
+            background-color: #0000CD;
         }
     </style>
 </head>
@@ -51,29 +67,37 @@
     <h1>Cursos Disponíveis</h1>
     <div class="container">
 
-        <a href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
-                alt="js">
-                <p>javascript</p>
-        </a>
+        <div class="box">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                    alt="js">
+                    <p>javascript</p>
+            </a>
+        </div>
 
-        <a href="#">
-            <img src="https://img.freepik.com/icones-gratis/html-5_318-674234.jpg?w=2000" alt="html">
-            <p>HTML</p>
-        </a>
 
+        <div class="box">
+            <a href="#">
+                <img src="https://img.freepik.com/icones-gratis/html-5_318-674234.jpg?w=2000" alt="html">
+                <p>HTML</p>
+            </a>
+        </div>
+
+        <div class="box">
         <a href="#">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
                 alt="css">
                 <p>CSS</p>
         </a>
+        </div>
 
+        <div class="box">
         <a href="#">
             <img src="https://www.macworld.com/wp-content/uploads/2023/01/setup_learn_sql_mac.jpg?quality=50&strip=all"
                 alt="sql">
                 <p>SQL</p>
         </a>
-
+    </div>
 
     </div>
 </body>

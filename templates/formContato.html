@@ -11,11 +11,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #6495Ed ;
+        justify-content: center;
+        background-color: cornflowerblue ;
+        height: 100vh;
     }
     h1{
         font-family: arial;
-        color: whitesmoke;
+        color: black;
     }
     div{
         padding: 5px;
@@ -24,11 +26,29 @@
     input {
         border-radius: 5px;
         border-color: #6495Ed;
-        height: 20px;
+        height: 25px;
+        border: none;
+        }
+        .btn{
+            height: 1.7rem;
+            cursor: pointer;
         }
         .btn:hover{
-            background-color: #6495Ed;
-            border: #6495Ed;
+            background-color: #d9d9d9;
+            
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label{
+            color: black;
+        }
+        form{
+            background-color: #d9d9d9;
+            width: 20rem;
+            border-radius: 1rem;
         }
 
 </style>
@@ -38,18 +58,22 @@
     <!-- Action onde eu vou mandar as informações/ rota -->
     <!-- Method Metodo que eu vou fazer isso/como? -->
     <form action="/user/save" method="POST">
-        <div>
-            <input type="text" name="name" placeholder="Digite seu nome">
+        <div class="input">
+            <label for="icontato">Digite seu nome:</label>
+            <input type="text" name="name" id="icontato" placeholder="ex: Amanda Cauponi">
             
         </div>
-        <div>
-            <input type="text" name="numero" placeholder="Digite seu Contato">
+        <div class="input">
+            <label for="inumber">Digite seu Contato:</label>
+            <input type="text" name="number" id="inumber" placeholder="ex: (82) 99999-9999">
         </div>
-        <div>
-            <input type="text" name="age" placeholder="Digite sua idade">
+        <div class="input">
+            <label for="iidade">Digite sua idade:</label>
+            <input type="number" name="age" id="iidade" placeholder="ex: 17">
         </div>
-        <div>
-            <input type="text" name="email" placeholder="Digite seu E-mail">
+        <div class="input">
+            <label for="iemail">Digite seu E-mail:</label>
+            <input type="email" name="email" id="iemail" placeholder="ex: amanda@gamil.com" required>
         </div>
         <!-- CADASTRAR -->
         <div>
